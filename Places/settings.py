@@ -101,7 +101,7 @@ DATABASES = {
 
 os.environ['GDAL_DATA'] = r"C:\Users\N1kZ6\AppData\Local\Programs\Python\Python39\Lib\site-packages\osgeo\data\gdal"
 os.environ['PROJ_LIB'] = r"C:\Users\N1kZ6\AppData\Local\Programs\Python\Python39\Lib\site-packages\osgeo\data\proj"
-os.environ['PATH'] = r"C:\Users\N1kZ6\AppData\Local\Programs\Python\Python39\Lib\site-packages\osgeo" +";" + os.environ['PATH']
+os.environ['PATH'] = r"C:\Users\N1kZ6\AppData\Local\Programs\Python\Python39\Lib\site-packages\osgeo" + ';' + os.environ['PATH']
 GDAL_LIBRARY_PATH = r'C:\Users\N1kZ6\AppData\Local\Programs\Python\Python39\Lib\site-packages\osgeo\gdal304.dll'
 
 # Password validation
