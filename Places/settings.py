@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-amn9l-vx7-5-9iiy)27w3jc%&blbppel^7(k_pzetpu@yn5y7#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -142,3 +142,7 @@ STATIC_URL = 'static/'
 ACCOUNT_EMAIL_REQUIRED = False
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
