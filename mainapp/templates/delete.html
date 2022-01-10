@@ -1,0 +1,8 @@
+{% block content %}
+  <form method="post">
+    {% csrf_token %}
+    <p>Вы уверены, что хотите удалить "{{ object.title }}"?</p>
+    {{ form }}
+    <button type="submit" class="btn btn-success">Удалить</button>
+  </form>
+{% endblock content %}
