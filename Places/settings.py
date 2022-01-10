@@ -99,9 +99,6 @@ DATABASES = {
     }
 }
 
-GDAL_LIBRARY_PATH = r'C:\OSGeo4W64\bin\gdal301.dll'
-GEOS_LIBRARY_PATH = r'C:\OSGeo4W64\bin\geos_c.dll'
-
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 

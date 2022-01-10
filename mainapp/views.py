@@ -28,13 +28,6 @@ class CreatePlaceView(CreateView):
 
     def form_valid(self, form):
         form.instance.author = self.request.user
-        if form_id:
-            try:
-                form = form.objects.get(id=form_id)
-            except ObjectDoesNotExist:
-                form = form.objects.create(form_id="Random")
-        else:
-            form = form.objects.create(form_id="Random")
         return super(CreatePlaceView, self).form_valid(form)
 
 
