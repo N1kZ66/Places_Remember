@@ -99,8 +99,10 @@ DATABASES = {
     }
 }
 
-GDAL_LIBRARY_PATH = r'C:\OSGeo4W64\bin\gdal301.dll'
-GEOS_LIBRARY_PATH = r'C:\OSGeo4W64\bin\geos_c.dll'
+os.environ['GDAL_DATA'] = r"C:\Users\N1kZ6\AppData\Local\Programs\Python\Python39\Lib\site-packages\osgeo\data\gdal"
+os.environ['PROJ_LIB'] = r"C:\Users\N1kZ6\AppData\Local\Programs\Python\Python39\Lib\site-packages\osgeo\data\proj"
+os.environ['PATH'] = r"C:\Users\N1kZ6\AppData\Local\Programs\Python\Python39\Lib\site-packages\osgeo" +";" + os.environ['PATH']
+GDAL_LIBRARY_PATH = r'C:\Users\N1kZ6\AppData\Local\Programs\Python\Python39\Lib\site-packages\osgeo\gdal304.dll'
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
